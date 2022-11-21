@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+.Parent{
+width: 800px;
+height: 300px;
+border: 1px solid black;
+display: grid;
+grid-template-columns: 200px;
+grid-template-rows: 75px;
+gap: 2px;
+
+
+}
+.header{
+    background-color: blue;
+    grid-column: 1/5;
+    grid-row: 1;
+
+}
+.footer{
+    background-color: blue;
+    grid-column: 1/5;
+    grid-row: 4;
+}
+.sidebar{
+    background-color: orange;
+    grid-row: 2/4;
+    grid-column: 4;
+}
+.Maincon{
+    grid-row: 2/4;
+    background-color: green;
+    grid-column: 2/4;
+}
+.sidenav{
+    background-color: orange;
+    grid-column: 1;
+    grid-row: 2/4;
+}

@@ -1,0 +1,6 @@
+input:valid{
+    border: 2px solid rgb(0, 255, 60);
+}
+input:invalid{
+    border: 2px solid rgb(201, 0, 0);
+}

@@ -1,0 +1,57 @@
+body{
+ background-color:cyan;
+ 
+}
+
+
+.container{
+  margin: 100px auto ;
+  padding: auto ;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  width: 800px;
+  height: 800px;
+  display: grid; 
+  grid-template-columns:25% 25% 25% 25% ;
+  grid-template-rows:25% 25% 25% 25% ; ;
+  gap: 10px;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  
+ 
+
+  
+}
+@keyframes example {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(45deg);}
+}
+
+#fir{
+  background-color: rgb(33, 34, 34);
+ grid-column: 1/4;
+}
+#sec{
+  background-color: rgb(33, 34, 34);
+  grid-column: 4;
+  grid-row: 1/4;
+
+}
+#th{
+  background-color: rgb(33, 34, 34);
+grid-row: 4;
+grid-column: 2/5;
+}
+#fo{
+  background-color: rgb(33, 34, 34);
+  grid-column: 1;
+  grid-row: 2/5;
+}
+#ffiv{
+  background-color: rgb(33, 34, 34);
+  grid-row: 2/4;
+  grid-column: 2/4;
+}

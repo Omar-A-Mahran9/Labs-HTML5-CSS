@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+   RED <input type="range" id="red" value="255" min="0" max="255">
+   Green <input type="range" id="green" value="255" min="0" max="255">
+   Blue <input type="range" id="blue" value="255" min="0" max="255">
+
+</body>
+<script>
+     var red ,blue,green;
+     reed=document.getElementById("red");
+    greeen=document.getElementById("green");
+    bluee=document.getElementById("blue");
+
+    reed.addEventListener("input",mycolor) 
+    greeen.addEventListener("input",mycolor)
+    bluee.addEventListener("input",mycolor)
+
+function mycolor(){
+   var redd=reed.value;
+   console.log(redd)
+   var greenn=greeen.value;
+   console.log(greenn)
+   var bluue=bluee.value;
+   console.log(bluue)
+    var color =`rgb(${redd},${greenn},${bluue})`;
+    document.body.style.backgroundColor=color;
+    document.getElementById("Data");
+}
+
+</script>
+</html>

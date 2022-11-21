@@ -1,0 +1,13 @@
+button{
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+
+  button:hover{
+    box-shadow: 1px 1px 10px rgb(24, 0, 129);
+    background-color: azure;
+    scale: 90%;
+  }
